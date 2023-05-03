@@ -47,13 +47,15 @@ def main():
 
     # some example text that contains few phrases from the file
     example_text = [
-        "Terima kasih atas pertanyaannya",
+        "Halo Yayan, Terima kasih atas pertanyaannya",
         "Buang air besar berlebihan mungkin disebabkan berbagai faktor.",
-        "Jaga pola makan dan olahraga untuk mencapai berat badan ideal",
+        "Jaga pola makan dan olah raga untuk mencapai berat badan ideal",
     ]
 
-    for text in example_text:
-        print(merge_phrase(text, phrase_list))
+    for i, text in enumerate(example_text):
+        print(f"{i+1}.", end=" ")
+        print(text)
+        print("  ", merge_phrase(text, phrase_list))
 
 
 if __name__ == "__main__":
